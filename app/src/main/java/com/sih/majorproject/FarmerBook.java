@@ -24,7 +24,7 @@ public class FarmerBook extends AppCompatActivity {
      ArrayList<Vehicle> vl;
     ArrayList<String> al;
    ListView list;
-
+    String phone;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,6 +47,8 @@ public class FarmerBook extends AppCompatActivity {
                         al.add(obj.getString("capacity")+"-"+obj.getString("transport_id")+"-"+obj.getString("vehicle_no")+"-"+obj.getString("price"));
 
                     }
+                    Intent intent1 = getIntent();
+                    phone=intent1.getStringExtra("phone");
 
 
              //System.out.println(al.get(0)+"----------------------------");
@@ -62,6 +64,7 @@ public class FarmerBook extends AppCompatActivity {
                             Intent intent= new Intent(FarmerBook.this ,FarmerCheckout.class);
 
                             intent.putExtra("pos",position);
+                            intent.putExtra("phone",phone);
                             intent.putExtra("id",id);
                             intent.putExtra("t_id",vl.get(position).getTransport_id());
                             intent.putExtra("capacity",vl.get(position).getCapacity());
