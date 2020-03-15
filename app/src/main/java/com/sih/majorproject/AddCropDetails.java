@@ -34,6 +34,7 @@ public class AddCropDetails extends AppCompatActivity {
                 vehicle.put("cropType",crop.getText().toString());
                 vehicle.put("load", load.getText().toString());
                 vehicle.put("crop_id",phone);
+                vehicle.put("idcc",phone+crop.getText().toString()+load.getText().toString());
                 vehicle.saveInBackground(new SaveCallback() {
                     @Override
                     public void done(ParseException e) {
