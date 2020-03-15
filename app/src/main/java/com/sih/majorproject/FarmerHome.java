@@ -28,7 +28,7 @@ public class FarmerHome extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         Intent intent = getIntent();
         System.out.println(intent.getStringExtra("phone")+"--------------");
-        this.p=intent.getStringExtra("phone");
+         this.p=intent.getStringExtra("phone");
         this.pw=intent.getStringExtra("pword");
 
 

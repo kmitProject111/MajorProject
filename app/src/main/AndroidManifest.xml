@@ -13,8 +13,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".FarmerBookingShow"></activity>
-        <activity android:name=".FarmerCheckout" />
+        <activity android:name=".FarmerCheckout"></activity>
         <activity android:name=".AddCropDetails" />
         <activity android:name=".FarmerBook" />
         <activity android:name=".ui.home.TransportAddVehicle" />
